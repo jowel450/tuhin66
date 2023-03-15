@@ -1,0 +1,430 @@
+
+/* COMMON CSS START  */
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.contaner{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* COMMON CSS ENDS  */
+
+/* NAVBAR START HERE */
+
+nav{
+    background: #02918b;
+}
+nav .row{
+    align-items: center;
+}
+nav .logo{
+    width: 40%;
+}
+nav .menu{
+    width: 60%;
+    text-align: right;
+}
+nav .menu ul{
+    justify-content: flex-end;
+}
+nav .menu ul li{
+    display: inline-block;
+}
+nav .menu ul li a{
+    color: #ffff;
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 26px 25px;
+    transition: 0.5s;
+    border-radius: 7px;
+
+}
+nav .menu ul li a:hover{
+    background: rgba(200, 248, 10, 0.881);
+    color: black;
+}
+
+/* NAVBAR ENDS HERE */
+
+/* BANNER START HERE */
+
+#banner{
+    background-color: #00000071;
+    background-blend-mode: multiply;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 728px;
+    align-items: center;
+}
+#banner .contaner{
+    height: 100%;
+}
+#banner .row{
+    height: 100%;
+    align-items: center;
+}
+#banner .banner_item{
+    width: 100%;
+    text-align: center;
+}
+#banner .banner_item h4{
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffff;
+}
+#banner .banner_item h1{
+    font-size: 68px;
+    font-weight: 800;
+    color: #ffff;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+#banner .banner_item p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+#banner .banner_item img{
+    margin: 53px auto;
+    display: block;
+}
+#banner .banner_item a{
+    display:inline-block;
+    padding: 17px 43px;
+    background: #cfc91d;
+    color: #0b1016;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+}
+/* BANNER ENDS HERE */
+
+/* ABOUT START HERE  */
+
+#about{
+    padding: 100px 0;
+    text-align: center;
+}
+#about .about_list .all_head{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+    /* text-align: center; */
+    position: relative;
+}
+#about .about_list .all_head::after{
+    content: '';
+    width: 162px;
+    height: 9px;
+    background-image: url(../img/sev.png);
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#about .about_list p{
+    font-size: 16px;
+    color: #7e8287;
+    font-weight: 400;
+    margin: 80px auto;
+    width: 80%;
+    text-align: center;
+    line-height: 40px;
+}
+#about .about_list p b{
+    font-weight: 800;
+    font-size: 23px;
+    color: #7e8287;
+}
+#about .about_item{
+    display: inline-block;
+    width: 25%;
+    padding: 50px 60px;
+    border-right: 2px solid #7e8287;
+}
+#about .about_item:last-child{
+    border: none;
+}
+#about .about_item h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    padding: 30px 0;
+}
+#about .about_item p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 20px;
+}
+
+/* ABOUT ENDS HERE  */
+
+/* SERVICES START HERE  */
+
+#services{
+    background-image: url(../img/services.jpg);
+    height: 727px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#services .main{
+    width: 50%;
+
+}
+#services .services_item .all_head{
+    padding-top: 72px;
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+    /* text-align: center; */
+    position: relative;
+}
+#services .services_item .all_head::after{
+    content: '';
+    width: 162px;
+    height: 9px;
+    background-image: url(../img/sev.png);
+    position: absolute;
+    bottom: -34px;
+    left: 80px;
+    transform: translateX(-50%);
+}
+#services .services_item p{
+    margin-top: 83px;
+    font-size: 18px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 40px;
+}
+#services .services_list{
+    width: 50%;
+    padding: 30px 0;
+    padding-right: 120PX;
+}
+#services .services_list h5{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 15px 0;
+}
+#services .services_list p{
+    font-size: 11px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 20px;
+}
+#services .services_list span{
+    color: #7e8287;
+    font-size: 25PX;
+    font-weight: 800;
+}
+
+/* SERVICES ENDS HERE  */
+
+/* MY WORK START HERE  */
+
+#my_work{
+    text-align: center;
+    margin: 98px auto;
+}
+#my_work .work_list .all_head{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+    /* text-align: center; */
+    position: relative;
+}
+#my_work .work_list .all_head::after{
+    content: '';
+    width: 162px;
+    height: 9px;
+    background-image: url(../img/sev.png);
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#my_work .work_list p{
+    font-size: 16px;
+    color: #7e8287;
+    font-weight: 400;
+    margin: 75px auto;
+    width: 680px;
+    text-align: center;
+    line-height: 40px;
+}
+#my_work .photo{
+    width: 25%;
+    position: relative;
+}
+#my_work .photo img{
+    width: 100%;
+    display: block;
+}
+#my_work .photo .photo_hover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background-color: #7e8287c9;
+    text-align: center;
+    inset: 25px;
+    transform: scaleY(0);
+    transition: 0.5s;
+}
+#my_work .photo:hover .photo_hover{
+    transform: scaleY(1);
+}
+#my_work .photo .photo_hover h5{
+    font-size: 16px;
+    font-weight: 800;
+    color: #fff;
+    margin: 15px;
+}
+#my_work .photo .photo_hover p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 20px;
+}
+#my_work .photo .photo_hover .overly{
+    margin: 60px 50px;
+}
+
+/* MY WORK ENDS HERE  */
+
+/* CONTACT ME START HERE  */
+
+#contact{
+    text-align: cente;
+}
+#contact .contact_list{
+    text-align: center;
+}
+#contact .contact_list .all_head{
+    padding-top: 7px;
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+    /* text-align: center; */
+    position: relative;
+}
+#contact .contact_list .all_head::after{
+    content: '';
+    width: 162px;
+    height: 9px;
+    background-image: url(../img/sev.png);
+    position: absolute;
+    bottom: -34px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#contact .contact_list p{
+    margin: 75px auto;
+    font-size: 18px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 40px;
+    width: 680px;
+}
+/* #contact .black{
+    background-color: #0a0a0b;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 636px;
+}
+#contact .black .details input,
+#contact .black .details textarea {
+    display: block;
+    margin: auto;
+    background: none;
+    padding: 18px auto;
+    margin-bottom: 50px;
+    border-bottom: 4px solid #7e8287;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+}
+#contact .black .details input::placeholder{
+    text-transform: uppercase;
+}
+#contact .black .details textarea{
+    resize: none;
+} */
+
+#contact_bg{
+    padding: 50px;
+    background-color: #0b1016;
+}
+#contact_bg .contact_item{
+    width: 30%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+#contact_bg .contact_item input,
+#contact_bg .contact_item textarea{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #7e8287;
+    color: #fff;
+    font-size: 16px;
+}
+#contact_bg .contact_item textarea{
+    resize: none;
+}
+#contact_bg .contact_item input::placeholder{
+    text-transform: uppercase;
+}
+button{
+    display:block;
+    padding: 17px 65px;
+    background: #cfc91d;
+    color: #0b1016;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 800;
+    margin:20px auto;
+
+    
+}
+
+.folio_last{
+    background-color: #000;
+}
+.folio_last .last_folio img{
+    display:block;
+    padding: 30px 0;
+    margin: auto;
+}
+/* CONTACT ME ENDS HERE
